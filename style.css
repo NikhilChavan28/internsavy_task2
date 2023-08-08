@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    /* --main-color: aqua; */
+    --main-color: #00abf0;
+    --text-color: #ededed;
+    --orange: #F2C14E;
+    --winning-blocks: #2d414b;
+}
+
+body {
+    background: #2d414b;
+    /* --orange: #F2C14E;
+    --winning-blocks: #2d414b; */
+}
+
+.container {
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #042e4d(11, 29, 66, 0.63);
+}
+
+.timer-display {
+    position: relative;
+    width: 92%;
+    background: var(--second-bg-color);
+    left: 4%;
+    font-family: 'Roboto mono', monospace;
+    color: var(--orange);
+    font-size: 30px;
+    padding: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    /* box-shadow: 0 0 20px var(--bg-color); */
+    box-shadow: 13px 25px 5px #081b29;
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: transparent;
+    color: var(--orange);
+    border: 3px solid orange;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 13px 25px 5px #081b29;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: transparent;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: transparent;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border: transparent;
+    background: orange;
+    color: var(--second-bg-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
